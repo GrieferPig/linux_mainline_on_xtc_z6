@@ -10,7 +10,7 @@ Just boots, there's ramoops dump available through lk2nd, see [Example ramoops c
 
 ## Issues
 
-- Display is not supported: msm8909w "is quite different from other Qualcomm SoCs (MDP3 instead of MDP4/MDP5) and needs a new driver in Linux. However, this only applies to devices where the display is connected via DSI" ([Postmarket Wiki](<https://wiki.postmarketos.org/wiki/Qualcomm_Snapdragon_210_(MSM8909)>))
+- Display is not supported: msm8909w "is quite different from other Qualcomm SoCs (MDP3 instead of MDP4/MDP5) and needs a new driver in Linux." - "applies to devices where the display is connected via DSI" ([Postmarket Wiki](<https://wiki.postmarketos.org/wiki/Qualcomm_Snapdragon_210_(MSM8909)>))
 
 - (More testing needed)
 
