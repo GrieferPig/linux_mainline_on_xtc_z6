@@ -1,0 +1,36 @@
+#include <skeleton32.dtsi>
+#include <lk2nd.dtsi>
+
+/ {
+	model = "Guangdong Genius Technology Co., Ltd. MSM8909W-PM8916 I18";
+	compatible = "qcom,msm8909-i18", "qcom,msm8909", "qcom,mtp";
+	qcom,msm-id = <0xf5 0x00 0x102 0x00 0x113 0x00 0x12c 0x00>;
+	qcom,board-id = <0x08 0x105>;
+};
+
+&lk2nd {
+	model = "Guangdong Genius Technology Co., Ltd. MSM8909W-PM8916 I18";
+	compatible = "qcom,msm8909-i18", "qcom,msm8909", "qcom,mtp";
+
+	gpio_keys {
+		status = "okay";
+
+		vol_up {
+			label = "volume_up";
+			gpios = <0x9f 0x5b 0x01>;
+			linux,code = <KEY_VOLUMEUP>;
+		};
+
+		vol_down {
+			label = "volume_down";
+			gpios = <0x9f 0x5c 0x01>;
+			linux,code = <KEY_VOLUMEDOWN>;
+		};
+
+		power {
+			label = "power";
+			gpios = <0x9f 0x5a 0x01>;
+			linux,code = <KEY_POWER>;
+		};
+	};
+};

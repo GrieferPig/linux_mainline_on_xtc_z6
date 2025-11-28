@@ -1,0 +1,285 @@
+PS Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu-24.04\home\grieferpig\linux> fastboot oem ramoops console
+(bootloader) Staged. Use 'fastboot get_staged <file>' to fetch.
+OKAY [  0.007s]
+Finished. Total time: 0.007s
+PS Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu-24.04\home\grieferpig\linux> fastboot get_staged console
+Uploading 'console'                                OKAY [  0.009s]
+Finished. Total time: 0.012s
+PS Microsoft.PowerShell.Core\FileSystem::\\wsl.localhost\Ubuntu-24.04\home\grieferpig\linux> cat .\console
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 6.6.0-msm8916-g038b2c46ae7e-dirty (grieferpig@BasedLaptop) (arm-linux-gnueabi-gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #3 SMP PREEMPT Thu Nov 27 00:43:52 PST 2025
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c5387d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Guangdong Genius Technology Co., Ltd. MSM8909W-PM8916 I18
+[    0.000000] earlycon: msm_serial_dm0 at MMIO 0x078af000 (options '')
+[    0.000000] printk: bootconsole [msm_serial_dm0] enabled
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] OF: reserved mem: 0x83200000..0x832545ff (337 KiB) nomap non-reusable framebuffer@83200000
+[    0.000000] OF: reserved mem: 0x87a00000..0x87bfffff (2048 KiB) nomap non-reusable tz-apps@87a00000
+[    0.000000] OF: reserved mem: 0x87c00000..0x87cdffff (896 KiB) nomap non-reusable rmtfs@87c00000
+[    0.000000] OF: reserved mem: 0x87ce0000..0x87cfffff (128 KiB) nomap non-reusable rfsa@87ce0000
+[    0.000000] OF: reserved mem: 0x87d00000..0x87dfffff (1024 KiB) nomap non-reusable smem@87d00000
+[    0.000000] OF: reserved mem: 0x87e00000..0x87ffffff (2048 KiB) nomap non-reusable tz@87e00000
+[    0.000000] OF: reserved mem: 0x88000000..0x8d4fffff (87040 KiB) nomap non-reusable mpss@88000000
+[    0.000000] OF: reserved mem: 0x8d500000..0x8dbfffff (7168 KiB) nomap non-reusable wcnss@8d500000
+[    0.000000] OF: reserved mem: 0x8dc00000..0x8dcfffff (1024 KiB) nomap non-reusable mba@8dc00000
+[    0.000000] OF: reserved mem: 0x9fa80000..0x9fafffff (512 KiB) map non-reusable ramoops@9fa80000
+[    0.000000] cma: Reserved 16 MiB at 0x9e800000 on node -1
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x00000000831fffff]
+[    0.000000]   node   0: [mem 0x0000000083200000-0x0000000083253fff]
+[    0.000000]   node   0: [mem 0x0000000083255000-0x00000000879fffff]
+[    0.000000]   node   0: [mem 0x0000000087a00000-0x000000008dcfffff]
+[    0.000000]   node   0: [mem 0x000000008dd00000-0x000000009fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000009fffffff]
+[    0.000000] On node 0, zone Normal: 1 pages in unavailable ranges
+[    0.000000] percpu: Embedded 13 pages/cpu s23380 r8192 d21676 u53248
+[    0.000000] Kernel command line: console=ttyMSM0,115200n8 console=tty0 earlycon clk_ignore_unused regulator.ignore_unused=1 pd_ignore_unused
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 129919
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] Memory: 384656K/524284K available (9216K kernel code, 856K rwdata, 2384K rodata, 1024K init, 289K bss, 123244K reserved, 16384K cma-reserved, 0K highmem)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu:     RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+[    0.000000]  Trampoline variant of Tasks RCU enabled.
+[    0.000000]  Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000001] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.010757] Switching to timer-based delay loop, resolution 52ns
+[    0.019042] Console: colour dummy device 80x30
+[    0.025005] printk: console [tty0] enabled
+[    0.029246] printk: bootconsole [msm_serial_dm0] disabled
+[    0.033364] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.00 BogoMIPS (lpj=64000)
+[    0.033406] CPU: Testing write buffer coherency: ok
+[    0.033465] pid_max: default: 32768 minimum: 301
+[    0.033652] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.033691] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.034913] /cpus/cpu@0 missing clock-frequency property
+[    0.034980] /cpus/cpu@1 missing clock-frequency property
+[    0.035024] /cpus/cpu@2 missing clock-frequency property
+[    0.035068] /cpus/cpu@3 missing clock-frequency property
+[    0.035099] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.035139] qcom_scm: convention: smc legacy
+[    0.036519] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1.
+[    0.036728] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1.
+[    0.036934] Setting up static identity map for 0x80100000 - 0x80100060
+[    0.037133] rcu: Hierarchical SRCU implementation.
+[    0.037156] rcu:     Max phase no-delay instances is 1000.
+[    0.038616] smp: Bringing up secondary CPUs ...
+[    0.039770] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.041073] CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[    0.042234] CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+[    0.042394] smp: Brought up 1 node, 4 CPUs
+[    0.042468] SMP: Total of 4 processors activated (153.00 BogoMIPS).
+[    0.042491] CPU: All CPU(s) started in SVC mode.
+[    0.043344] devtmpfs: initialized
+[    0.052400] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.052662] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+[    0.052720] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.053738] pinctrl core: initialized pinctrl subsystem
+[    0.055721] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.057070] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.057954] audit: initializing netlink subsys (disabled)
+[    0.058242] audit: type=2000 audit(0.036:1): state=initialized audit_enabled=0 res=1
+[    0.058827] thermal_sys: Registered thermal governor 'step_wise'
+[    0.058900] cpuidle: using governor menu
+[    0.059152] NET: Registered PF_QIPCRTR protocol family
+[    0.059495] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.059538] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.061677] pstore: Using crash dump compression: deflate
+[    0.061723] printk: console [ramoops-1] enabled
+[    0.062356] pstore: Registered ramoops as persistent store backend
+[    0.062387] ramoops: using 0x80000@0x9fa80000, ecc: 0
+[    0.077240] platform 78d9000.usb: Fixed dependency cycle(s) with /soc@0/usb@78d9000/ulpi/phy
+[    0.082805] cryptd: max_cpu_qlen set to 1000
+[    0.084124] iommu: Default domain type: Translated
+[    0.084168] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.084565] SCSI subsystem initialized
+[    0.084783] usbcore: registered new interface driver usbfs
+[    0.084859] usbcore: registered new interface driver hub
+[    0.084942] usbcore: registered new device driver usb
+[    0.085198] pps_core: LinuxPPS API ver. 1 registered
+[    0.085234] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.085292] PTP clock support registered
+[    0.086466] Advanced Linux Sound Architecture Driver Initialized.
+[    0.087371] Bluetooth: Core ver 2.22
+[    0.087456] NET: Registered PF_BLUETOOTH protocol family
+[    0.087489] Bluetooth: HCI device and connection manager initialized
+[    0.087529] Bluetooth: HCI socket layer initialized
+[    0.087562] Bluetooth: L2CAP socket layer initialized
+[    0.087607] Bluetooth: SCO socket layer initialized
+[    0.088457] clocksource: Switched to clocksource arch_sys_counter
+[    0.088794] VFS: Disk quotas dquot_6.6.0
+[    0.088878] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.101680] NET: Registered PF_INET protocol family
+[    0.102008] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.103609] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.103765] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.103823] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    0.103908] TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.104071] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.104205] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.104271] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.104492] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.106803] Unpacking initramfs...
+[    0.112143] hw perfevents: enabled with armv7_cortex_a7 PMU driver, 5 counters available
+[    0.113901] Initialise system trusted keyrings
+[    0.114238] workingset: timestamp_bits=14 max_order=17 bucket_order=3
+[    0.217822] Freeing initrd memory: 1152K
+[    0.331509] Key type asymmetric registered
+[    0.331553] Asymmetric key parser 'x509' registered
+[    0.331711] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    0.331758] io scheduler mq-deadline registered
+[    0.331817] io scheduler kyber registered
+[    0.331899] io scheduler bfq registered
+[    0.345149] msm_serial: driver initialized
+[    0.346632] [drm] Initialized simpledrm 1.0.0 20200625 for 83200000.framebuffer on minor 0
+[    0.352441] Console: switching to colour frame buffer device 40x45
+[    0.359355] simple-framebuffer 83200000.framebuffer: [drm] fb0: simpledrmdrmfb frame buffer device
+[    0.368672] loop: module loaded
+[    0.372187] spmi spmi-0: PMIC arbiter version v2 (0x20010000)
+[    0.382565] usbcore: registered new interface driver usb-storage
+[    0.388353] rtc-pm8xxx 200f000.spmi:pmic@0:rtc@6000: registered as rtc0
+[    0.391977] rtc-pm8xxx 200f000.spmi:pmic@0:rtc@6000: setting system clock to 1970-01-01T00:55:49 UTC (3349)
+[    0.399307] input: pm8941_pwrkey as /devices/platform/soc@0/200f000.spmi/spmi-0/0-00/200f000.spmi:pmic@0:pon@800/200f000.spmi:pmic@0:pon@800:pwrkey/input/input0
+[    0.413258] sdhci: Secure Digital Host Controller Interface driver
+[    0.417700] sdhci: Copyright(c) Pierre Ossman
+[    0.422168] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.428198] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.434127] usbcore: registered new interface driver usbhid
+[    0.438736] usbhid: USB HID core driver
+[    0.451078] NET: Registered PF_PACKET protocol family
+[    0.455607] Registering SWP/SWPB emulation handler
+[    0.473895] registered taskstats version 1
+[    0.478957] Loading compiled-in X.509 certificates
+[    0.525485] qcom_usb_hs_phy ci_hdrc.0.ulpi: supply v1p8 not found, using dummy regulator
+[    0.532265] qcom_usb_hs_phy ci_hdrc.0.ulpi: supply v3p3 not found, using dummy regulator
+[    0.545002] spmi-temp-alarm 200f000.spmi:pmic@0:temp-alarm@2400: error -ENODEV: failed to register sensor
+[    0.552386] PM: genpd: Not disabling unused power domains
+[    0.557698] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    0.573134] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    0.578108] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    0.578728] clk: Not disabling unused clocks
+[    0.583655] cfg80211: failed to load regulatory.db
+[    0.587277] ALSA device list:
+[    0.592885]   No soundcards found.
+[    0.596873] Freeing unused kernel image (initmem) memory: 1024K
+[    0.629222] Run /init as init process
+[    0.647036] autofs
+[    0.647036] console
+[    0.647036] cpu_dma_latency
+[    0.647036] dri
+[    0.647036] fb0
+[    0.647036] full
+[    0.647036] gpiochip0
+[    0.647036] gpiochip1
+[    0.647036] gpiochip2
+[    0.647036] hwrng
+[    0.647036] input
+[    0.647036] kmsg
+[    0.647036] loop-control
+[    0.647036] loop0
+[    0.647036] loop1
+[    0.647036] loop2
+[    0.647036] loop3
+[    0.647036] loop4
+[    0.647036] loop5
+[    0.647036] loop6
+[    0.647036] loop7
+[    0.647036] mem
+[    0.647036] null
+[    0.647036] port
+[    0.647036] ptmx
+[    0.647036] ptyp0
+[    0.647036] ptyp1
+[    0.647036] ptyp2
+[    0.647036] ptyp3
+[    0.647036] ptyp4
+[    0.647036] ptyp5
+[    0.647036] ptyp6
+[    0.647036] ptyp7
+[    0.647036] ptyp8
+[    0.647036] ptyp9
+[    0.647036] ptypa
+[    0.647036] ptypb
+[    0.647036] ptypc
+[    0.647036] ptypd
+[    0.647036] ptype
+[    0.647036] ptypf
+[    0.647036] qcom_rmtfs_mem1
+[    0.647036] random
+[    0.647036] rfkill
+[    0.647036] rpmsg_ctrl0
+[    0.647036] rtc0
+[    0.647036] snd
+[    0.647036] tty
+[    0.647036] tty0
+[    0.647036] tty1
+[    0.647036] tty10
+[    0.647036] tty11
+[    0.647036] tty12
+[    0.647036] tty13
+[    0.647036] tty14
+[    0.647036] tty15
+[    0.647036] tty16
+[    0.647036] tty17
+[    0.647036] tty18
+[    0.647036] tty19
+[    0.647036] tty2
+[    0.647036] tty20
+[    0.647036] tty21
+[    0.647036] tty22
+[    0.647036] tty23
+[    0.647036] tty24
+[    0.647036] tty25
+[    0.647036] tty26
+[    0.647036] tty27
+[    0.647036] tty28
+[    0.647036] tty29
+[    0.647036] tty3
+[    0.647036] tty30
+[    0.647036] tty31
+[    0.647036] tty32
+[    0.647036] tty33
+[    0.647036] tty34
+[    0.647036] tty35
+[    0.647036] tty36
+[    0.647036] tty37
+[    0.647036] tty38
+[    0.647036] tty39
+[    0.647036] tty4
+[    0.647036] tty40
+[    0.647036] tty41
+[    0.647036] tty42
+[    0.647036] tty43
+[    0.647036] tty44
+[    0.647036] tty45
+[    0.647036] tty46
+[    0.647036] tty47
+[    0.647036] tty48
+[    0.647036] tty49
+[    0.647036] tty5
+[    0.647036] tty50
+[    0.647036] tty51
+[    0.707076]               total        used        free      shared  buff/cache   available
+[    0.707076] Mem:         393.8M        9.6M      380.4M        2.3M        3.9M      377.3M
+[    0.707076] Swap:             0           0           0
+[    0.712726] INIT: Testing display with random noise...
+[    1.551918] random: crng init done
+[    1.720189] INIT: Writing to physical memory 0x83200000...
+[    1.966271] ------------------------------------------------
+[    1.968269] SUCCESS: Userspace /init script is running!
+[    1.971612] Filesystems mounted. Hello from MSM8909W.
+[    1.975081] ------------------------------------------------
